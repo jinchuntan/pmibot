@@ -37,6 +37,8 @@ If Chrome startup crashes, use a local (non-OneDrive) profile path:
 
 ```bash
 python click_connect_helper.py --use-open-page --button-label "Connect" --browser-channel chromium --user-data-dir "$env:LOCALAPPDATA\\pmi_playwright_profile"
+
+python simple_click_connect_attach.py --button-label "Connect" --url-contains "community.pmi.org" --navigation-timeout-seconds 30 --navigation-retries 5 --page-settle-seconds 6
 ```
 
 ## Arguments
